@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add some styles for body*/
+body {
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: 'Sora', sans-serif;
+    line-height: 1.5;
+    background-color: #111315;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+header {
+    background: url('../images/bg-cafe.jpg') center center / cover no-repeat;
+    height: 50vh;
+    width: 100vw;
+    top: 0;
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    border-radius: 12px;
+    top: 153px;
+    background-color: #1B1D1F;
+    width: 70vw;
+    height: auto;
+    padding-bottom: 4rem;
+    position: absolute;
+    text-align: center;
+}
+
+.container-title {
+    padding-top: 5rem;
+}
+
+.title {
+    color: #fff;
+}
+
+.subtitle {
+    padding-top: 1rem;
+    width: 59%;
+    margin: 0 auto;
+    font-size: medium;
+    line-height: 1.6;
+    color: #6F757C;
+}
+
+.button-prod {
+    background: #6F757C;
+    border: none;
+    border-radius: 9px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.button-prod:hover {
+    background: #878f98;
+    border: none;
+    border-radius: 9px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+
+.button-aval {
+    background: none;
+    border: none;
+    border-radius: 9px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.button-aval:hover {
+    background: rgba(210, 210, 210, 0.204);
+    border: 2px #111315;
+    border-radius: 9px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.card {
+    
+    overflow: hidden;
+    margin: 1rem;
+    text-align: left;
+    color: #333;
+    max-width: 300px;
+    flex: 1 1 calc(33.333% - 2rem);
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h4 {
+    margin: 0 0 0.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.card-content p {
+    margin: 0.5rem 0;
+   
+}
+
+.price{
+    background: #BEE3CC;
+    padding:  0.4rem 0.4rem;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.raiting{
+    color: #fff;
+    font-weight: bold;
+    
+}
+
+.raiting span{
+    color: #6F757C;
+    font-weight: normal;
+    font-size: 13px;
+}
+.rating img {
+
+    height: auto;
+    vertical-align: middle;
+}
+
+.card-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sold-containe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text{
+    color: #fff;
+}
+.sold {
+    color: #FF6347;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+
+
+/* 2 columnas para pantallas medianas */
+@media (max-width: 1280px) {
+    .container-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 1 columna para pantallas pequeñas */
+@media (max-width: 640px) {
+    .container-card {
+        grid-template-columns: 1fr;
+    }
+}
